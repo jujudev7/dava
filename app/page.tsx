@@ -20,12 +20,20 @@ export default function Home() {
           depuis 2014.
         </h3>
       </div>
-      <div className="duo my-20 px-8">
+      <div className="duo relative mt-20 overflow-hidden px-8">
         <h2 className="mb-4 text-6xl font-bold">
           Sacha Béhar <span className="font-thin">&</span> Augustin
           Shackelpopoulos
           <span className="font-thin">,</span>
         </h2>
+
+        <Image
+          src="/dava-tybalt.png"
+          alt="Le duo DAVA et Tybalt, le chat."
+          width={423}
+          height={900}
+          className="float-right ml-4 h-auto max-w-[50%]"
+        />
 
         <p className="text-4xl font-thin leading-relaxed">
           ces noms ne vous disent peut-être rien, pourtant il s&apos;agit
@@ -35,19 +43,33 @@ export default function Home() {
         <br />
         <p className="text-4xl font-thin leading-relaxed">
           Tantôt espiègles, tantôt piquants, Sacha et Augustin trempent leur
-          plume dans l&apos;acide pour nous faire rire. DAVA est un binôme
-          éveillé, à la fois satirique et potache.
+          plume dans l&apos;acide pour nous faire rire. Poils à gratter de notre
+          société, ils n&apos;hésitent pas à aborder les sujets qui fâchent,
+          comme le nazisme, la pédophilie ou les chaussettes qui boulochent...
         </p>
         <br />
 
         <p className="text-4xl font-thin leading-relaxed">
-          Poils à gratter de notre société, ils n&apos;hésitent pas à aborder
-          les sujets qui fâchent, comme le nazisme, la pédophilie ou les
-          chaussettes qui boulochent...
+          DAVA est un binôme éveillé, à la fois satirique et potache, aux
+          frontières de l&apos;absurde et de l&apos;humour noir.
         </p>
-        <p>Zidane, Bob Dylan</p>
-        <p>l&apos;Italie, le Stade Rennais, le cinéma</p>
+
+        <div className="tybalt absolute bottom-12 right-1/3 flex flex-col items-end">
+          <p className="font-kalam pb-2 text-5xl text-pink-500">
+            Ça, c&apos;est Tybalt
+          </p>
+          <Image src="/arrow.png" alt="" width={80} height={30} />
+        </div>
       </div>
+
+      {/* <div className="sacha">
+        <p className="pb-20 text-4xl font-thin leading-relaxed">
+          l&apos;Italie, le Stade Rennais, le cinéma
+        </p>
+      </div>
+      <div className="augustin">
+        <p className="text-4xl font-thin leading-relaxed">Hétéro à 2000%, Zidane, Bob Dylan</p>
+      </div> */}
       <div className="grid-container flex h-screen flex-col">
         <div className="item group flex-1 bg-[#368524] p-4 text-white transition-[flex] duration-300 hover:flex-[2]">
           <h2 className="text-5xl font-bold">DAVAVAD</h2>
