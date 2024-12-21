@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div className="">
       <div className="heading flex h-screen flex-col bg-slate-950 text-white">
-        <h1 className="-mt-6 ml-4 text-[50vh] font-bold">DAVA</h1>
+        <h1 className="-mt-6 ml-6 text-[47vh] font-bold">DAVA</h1>
         <h2 className="-mt-20 mb-10 ml-12 text-7xl font-thin">
           Divertissement Ad Vitam Æternam
         </h2>
@@ -21,19 +21,19 @@ export default function Home() {
         </h3>
       </div>
       <div className="duo relative mt-20 overflow-hidden px-8">
-        <h2 className="mb-4 text-6xl font-bold">
-          Sacha Béhar <span className="font-thin">&</span> Augustin
-          Shackelpopoulos
-          <span className="font-thin">,</span>
-        </h2>
-
         <Image
           src="/dava-tybalt.png"
           alt="Le duo DAVA et Tybalt, le chat."
           width={423}
           height={900}
-          className="float-right ml-4 h-auto max-w-[50%]"
+          className="float-right ml-4 w-1/4"
         />
+
+        <h2 className="mb-4 text-6xl font-bold">
+          Sacha Béhar <span className="font-thin">&</span> Augustin
+          Shackelpopoulos
+          <span className="font-thin">,</span>
+        </h2>
 
         <p className="text-4xl font-thin leading-relaxed">
           ces noms ne vous disent peut-être rien, pourtant il s&apos;agit
@@ -51,7 +51,8 @@ export default function Home() {
 
         <p className="text-4xl font-thin leading-relaxed">
           DAVA est un binôme éveillé, à la fois satirique et potache, aux
-          frontières de l&apos;absurde et de l&apos;humour noir.
+          frontières de l&apos;absurde et de l&apos;humour noir. C&apos;est bon
+          ça !
         </p>
 
         <div className="tybalt absolute bottom-12 right-1/3 flex flex-col items-end">
@@ -64,7 +65,7 @@ export default function Home() {
 
       {/* <div className="sacha">
         <p className="pb-20 text-4xl font-thin leading-relaxed">
-          l&apos;Italie, le Stade Rennais, le cinéma
+          l&apos;Italie, le Stade Rennais, le cinéma. Il a un chat qui s&apos;appelle Tybalt.
         </p>
       </div>
       <div className="augustin">
