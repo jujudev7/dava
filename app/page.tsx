@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
           height="100"
           alt="Parental Advisory logo"
         />
-        <h3 className="absolute bottom-0 right-0 mb-5 mr-10 flex justify-end font-mono italic text-slate-400">
+        <h3 className="absolute bottom-0 right-0 mb-5 mr-5 flex justify-end font-mono italic text-slate-400">
           Dans l&apos;inconscient collectif des Français (hors Corse et DOM-TOM)
           depuis 2014.
         </h3>
@@ -56,7 +57,7 @@ export default function Home() {
         </p>
 
         <div className="tybalt absolute bottom-12 right-1/3 flex flex-col items-end">
-          <p className="font-kalam pb-2 text-5xl text-pink-500">
+          <p className="pb-2 font-kalam text-5xl text-pink-500">
             Ça, c&apos;est Tybalt
           </p>
           <Image src="/arrow.png" alt="" width={80} height={30} />
@@ -72,9 +73,28 @@ export default function Home() {
         <p className="text-4xl font-thin leading-relaxed">Hétéro à 2000%, Zidane, Bob Dylan</p>
       </div> */}
       <div className="grid-container flex h-screen flex-col">
-        <div className="item group flex-1 bg-[#368524] p-4 text-white transition-[flex] duration-300 hover:flex-[2]">
-          <h2 className="text-5xl font-bold">DAVAVAD</h2>
-          <h3 className="text-2xl font-thin">VIDÉOS À LA DEMANDE</h3>
+        <div className="item group flex-1 bg-[#368524] text-white transition-[flex] duration-300 hover:flex-[2]">
+          <h2 className="p-4 text-5xl font-bold">DAVAVAD</h2>
+          <h3 className="mb-6 pl-5 text-2xl font-thin">VIDÉOS À LA DEMANDE</h3>
+          <Link href="https://davavad.fr/">
+            <Image
+              src="/tybalt-davavad.png"
+              alt="Tybalt, vidéo à la demande"
+              width={3767}
+              height={840}
+              className="w-full brightness-75 hover:brightness-100"
+            />
+          </Link>
+          <p className="p-12 text-center text-xl">
+            {" "}
+            Retrouvez les vidéos à la demande de l&apos;irrésistible duo sur{" "}
+            <Link
+              href="https://davavad.fr/"
+              className="px-1 text-2xl font-bold hover:rounded-xl hover:bg-white hover:pb-1 hover:text-[#368524]"
+            >
+              davavad.fr
+            </Link>
+          </p>
         </div>
         <div className="item group flex-1 bg-[#f00632] p-4 text-5xl font-bold text-white transition-[flex] duration-300 hover:flex-[2]">
           YOUTUBE
