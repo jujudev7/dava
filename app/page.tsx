@@ -75,40 +75,87 @@ export default function Home() {
       <div className="grid-container flex h-screen flex-col">
         <div className="item group flex-1 bg-[#368524] text-white transition-[flex] duration-300 hover:flex-[2]">
           <h2 className="p-4 text-5xl font-bold">DAVAVAD</h2>
-          <h3 className="mb-6 pl-5 text-2xl font-thin">VIDÉOS À LA DEMANDE</h3>
-          <Link href="https://davavad.fr/">
-            <Image
-              src="/tybalt-davavad.png"
-              alt="Tybalt, vidéo à la demande"
-              width={3767}
-              height={840}
-              className="w-full brightness-75 hover:brightness-100"
-            />
-          </Link>
-          <p className="p-12 text-center text-xl">
-            {" "}
-            Retrouvez les vidéos à la demande de l&apos;irrésistible duo sur{" "}
-            <Link
-              href="https://davavad.fr/"
-              className="px-1 text-2xl font-bold hover:rounded-xl hover:bg-white hover:pb-1 hover:text-[#368524]"
-            >
-              davavad.fr
+          <div className="hidden group-hover:block">
+            <h3 className="mb-6 pl-5 text-2xl font-thin">
+              VIDÉOS À LA DEMANDE
+            </h3>
+            <Link href="https://davavad.fr/">
+              <Image
+                src="/tybalt-davavad.png"
+                alt="Tybalt, vidéo à la demande"
+                width={3767}
+                height={840}
+                className="w-full brightness-75 hover:brightness-100"
+              />
             </Link>
-          </p>
+            <p className="p-12 text-center text-xl">
+              {" "}
+              Retrouvez les vidéos à la demande de l&apos;irrésistible duo sur{" "}
+              <Link
+                href="https://davavad.fr/"
+                className="px-1 text-2xl font-bold hover:rounded-xl hover:bg-white hover:pb-1 hover:text-[#368524]"
+              >
+                davavad.fr
+              </Link>
+            </p>
+          </div>
         </div>
-        <div className="item group flex-1 bg-[#f00632] p-4 text-5xl font-bold text-white transition-[flex] duration-300 hover:flex-[2]">
+        <div className="bg-[#f00632] p-4 text-5xl font-bold text-white">
           YOUTUBE
-          <div className="video mt-8 hidden group-hover:block">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/-Fv-GOSezIY?si=Oug2dJQf-joEO43q"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
-            ></iframe>
+          <div className="mt-8 flex flex-row justify-around">
+            <div className="ytb flex flex-col items-center">
+              <Link
+                href="https://www.youtube.com/@DAVAofficiel"
+                alt="La chaîne YouTube de DAVA"
+              >
+                <Image
+                  src="/dava-youtube.webp"
+                  alt="La chaîne YouTube de DAVA"
+                  width={300}
+                  height={300}
+                  className="scale-95 rounded-full brightness-90 hover:scale-100 hover:brightness-100"
+                />
+              </Link>
+              <Link href="https://www.youtube.com/@DAVAofficiel">
+                <h3 className="my-4 px-2 pb-1 text-xl hover:rounded-xl hover:bg-white hover:text-[#f00632]">
+                  @DAVAofficiel
+                </h3>
+              </Link>
+            </div>
+
+            <div className="ytb flex flex-col items-center">
+              <Link href="https://www.youtube.com/@sachabehar">
+                <Image
+                  src="/behar-youtube.jpg"
+                  alt="La chaîne YouTube de Sacha Béhar"
+                  width={300}
+                  height={300}
+                  className="scale-95 rounded-full brightness-90 hover:scale-100 hover:brightness-100"
+                />
+              </Link>
+              <Link href="https://www.youtube.com/@DAVAofficiel">
+                <h3 className="my-4 px-2 pb-1 text-xl hover:rounded-xl hover:bg-white hover:text-[#f00632]">
+                  @sachabehar
+                </h3>
+              </Link>
+            </div>
+
+            <div className="ytb flex flex-col items-center">
+              <Link href="https://www.youtube.com/@shackelclic">
+                <Image
+                  src="/shackelpopoulos-youtube.jpg"
+                  alt="La chaîne YouTube d'Augustin Shackelpopoulos'"
+                  width={300}
+                  height={300}
+                  className="scale-95 rounded-full brightness-90 hover:scale-100 hover:brightness-100"
+                />
+              </Link>
+              <Link href="https://www.youtube.com/@shackelclic">
+                <h3 className="my-4 px-2 pb-1 text-xl hover:rounded-xl hover:bg-white hover:text-[#f00632]">
+                  @shackelclic
+                </h3>
+              </Link>
+            </div>
           </div>
         </div>
         <div className="item group flex-1 bg-[#ffa500] p-4 text-5xl font-bold text-white transition-[flex] duration-300 hover:flex-[2]">
